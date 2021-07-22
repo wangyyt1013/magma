@@ -259,6 +259,7 @@ func loadAPNs(gateway *protos.Identity_Gateway) (map[string]*lte_models.ApnConfi
 		return nil, nil, err
 	}
 
+	glog.Infof("---------------I'm a test change")
 	return apnsByName, apnResources, nil
 }
 
