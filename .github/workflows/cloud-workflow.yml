@@ -184,7 +184,6 @@ jobs:
         run: |
           cd ${MAGMA_ROOT}
           npm i -g swaggerhub-cli
-          swaggerhub configure
           swaggerhub api:unpublish MagmaCore/Magma/1.0.0
           swaggerhub api:create MagmaCore/Magma/1.0.0 --file orc8r/cloud/go/obsidian/swagger/v1/swagger.yml --publish --visibility=public --setdefault
       - name: Extract commit title
