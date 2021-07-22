@@ -5,6 +5,7 @@ on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - master
+      - swaggerhub-master
     paths:
       - 'cwf/cloud/**'
       - 'fbinternal/cloud/**'
@@ -16,6 +17,7 @@ on:  # yamllint disable-line rule:truthy
   pull_request:
     branches:
       - master
+      - swaggerhub-master
     paths:
       - 'cwf/cloud/**'
       - 'fbinternal/cloud/**'
